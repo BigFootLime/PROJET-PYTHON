@@ -5,8 +5,8 @@ from sqlalchemy import Boolean, DateTime, Enum as SAEnum, Integer, String, Uniqu
 from sqlalchemy.dialects.postgresql import ARRAY
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
-class Base(DeclarativeBase):
-    pass
+from app.core.base import Base
+
 
 class UserRole(str, Enum):
     employee = "employee"

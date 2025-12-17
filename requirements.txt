@@ -13,3 +13,4 @@ httpx
 ruff
 mypy
 pylint
+psycopg[binary]
