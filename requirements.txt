@@ -14,3 +14,4 @@ ruff
 mypy
 pylint
 psycopg[binary]
+alembic
