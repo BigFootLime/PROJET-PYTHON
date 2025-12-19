@@ -12,8 +12,10 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from app.core.config import settings
 from app.core.base import Base
 
-from app.modules.users import models as _users_models  # noqa: F401
-from app.modules.resources import models as _resources_models  # noqa: F401
+from app.modules.users import models as _users_models  
+from app.modules.resources import models as _resources_models  
+from app.modules.bookings import models as _bookings_models  
+
 
 
 
