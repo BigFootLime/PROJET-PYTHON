@@ -3,6 +3,7 @@ from app.core.config import settings
 from app.modules.health.routes import router as health_router
 from app.modules.users.routes import router as users_router
 from app.modules.resources.routes import router as resources_router
+from app.modules.bookings.routes import router as bookings_router
 
 
 """Main application entry point"""
@@ -14,6 +15,8 @@ app.include_router(users_router)
 app.include_router(health_router)
 
 app.include_router(resources_router)
+
+app.include_router(bookings_router)
 
 """Root endpoint"""
 @app.get("/")
